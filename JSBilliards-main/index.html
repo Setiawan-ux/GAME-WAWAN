@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./src/assets/images/ball_8.png">
+  
+       <meta property="og:title" content="JS Billiards" />
+     <meta property="og:image" content="jsbilliards.png" />
+     <meta
+       property="og:description"
+       content="8-ball pool with 2 players built with Javascript, HTML, Canvas."
+     />
+     <meta
+       property="og:url"
+       content="https://cptleo92.github.io/JSBilliards/"
+     />
+  
+  <link rel="stylesheet" href="./dist/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script type="text/javascript" src="./dist/main.js"></script>
+  <title>JS Billiards!</title>
+</head>
+<body>
+  <div class="instructions animate__animated animate__fadeInDown animate__slow">
+    <h1>Welcome to JS Billiards!</h1>
+    <p>This is your classic game of 8-ball pool. The controls are simple:</p>
+    <ul>
+      <li>If you have ball in hand, click to place the ball.</li>
+      <li>Click to set the angle. You will see the stick rotate along with your mouse position.</li>
+      <li>Click, <strong>HOLD</strong> and <strong>RELEASE</strong> to shoot! The power of the shot corresponds with the distance from the stick to the cue ball.</li>
+    </ul>
+
+      <div class="animate-flicker hidden">Loading...</div>
+
+  </div>
+  <canvas id="table" class="hidden"></canvas>
+  <section class="info hidden unselectable">
+    <section class="info-top"><p class="tracker"></p></section>
+    <section class="info-bottom">
+      <section class="info-bottom-left"></section>
+      <section class="info-bottom-middle">
+        <button class="reset">Reset Table</button>
+        <div class="socials">
+          <a href="http://www.linkedin.com/in/sirleoc"><img src="src/assets/images/linkedin_icon_white.png" alt="LinkedIn"></a>
+          <a href="http://www.github.com/cptleo92"><img src="src/assets/images/github_icon_white.png" alt="Github"></a>
+        </div>
+      </section>
+      <section class="info-bottom-right"></section>
+    </section>
+  </section>
+</body>
+</html>
